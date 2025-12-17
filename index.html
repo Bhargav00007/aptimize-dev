@@ -15,6 +15,35 @@
     <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/lindy-uikit.css" />
+    <style>
+.hero-main-img {
+    transition: all 0.3s ease;
+}
+
+/* MOBILE: Push image DOWN */
+@media (max-width: 991.98px) {
+    .hero-main-img {
+        margin-bottom: 20px !important;
+        transform: translateY(30px) !important;  /* ✅ DOWN on mobile */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-main-img {
+        transform: translateY(50px) !important;  /* ✅ Further DOWN */
+        margin-bottom: 10px !important;
+        height: 350px !important;
+        border-radius: 20px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-main-img {
+        transform: translateY(70px) !important;  /* ✅ Most DOWN on small mobile */
+        margin-bottom: 0 !important;
+    }
+}
+</style>
   </head>
   <body>
     <!-- ========================= preloader start ========================= -->
@@ -106,15 +135,15 @@
             <div class="col-lg-6">
               <div class="hero-content-wrapper">
                 <h4 class="wow fadeInUp" data-wow-delay=".2s">
-                  Intelligent Automation
+                  Intelligent Automation for
                 </h4>
                 <h2 class="mb-30 wow fadeInUp" data-wow-delay=".4s">
                   Infrastructure & Operations
                 </h2>
                 <p class="mb-50 wow fadeInUp" data-wow-delay=".6s">
                   Transform data and processes into intelligent, connected
-                  ecosystems with our patent-filed Enterprise Knowledge Graphs
-                  and Semantic Intelligence technology.
+                  ecosystems with our patent‑filed Enterprise Knowledge Graphs
+                  and Semantic Intelligence <strong>with optional permanent, decentralized data infrastructure on blockchain</strong>.
                 </p>
                 <div class="buttons">
                   <a
@@ -124,22 +153,50 @@
                     >Get Started</a
                   >
                 </div>
+                <p class="mt-20 wow fadeInUp" data-wow-delay=".8s" style="font-size: 14px; color: #666;">
+                  AI‑powered consulting and technology solutions <strong>with blockchain backed for mission‑critical operations</strong>.
+                </p>
               </div>
             </div>
             <div class="col-lg-6">
-              <div class="hero-image">
-                <img
-                  src="assets/img/hero/hero-2/hero-img.svg"
-                  alt="AI Solutions"
-                  class="wow fadeInRight"
-                  data-wow-delay=".2s"
-                />
-                <img
-                  src="assets/img/hero/hero-2/paattern.svg"
-                  alt=""
-                  class="shape shape-1"
-                />
-              </div>
+    <div class="hero-image">
+        <img
+    src="assets/img/hero/hero-2/heroOrange.png"
+    alt="AI Solutions"
+    class="wow fadeInRight hero-main-img"
+    data-wow-delay=".2s"
+    style="
+        width: 600px; 
+        height: 500px; 
+        max-width: 100%; 
+        height: auto;
+        object-fit: cover;
+        border-radius: 30px;
+        
+        /* Desktop/Tablet - UP position */
+        margin-bottom: 100px;
+        transform: translateY(-50px);
+    "
+/>
+
+
+
+        <img
+            src="assets/img/hero/hero-2/paattern.svg"
+            alt=""
+            class="shape shape-1"
+            style="
+                width: 200px; 
+                height: 200px; 
+                opacity: 0.1;
+                position: absolute;
+                top: 20%;
+                right: 10%;
+            "
+        />
+    </div>
+</div>
+
             </div>
           </div>
         </div>
@@ -159,7 +216,7 @@
                   </h3>
                   <p class="wow fadeInUp" data-wow-delay=".4s">
                     We blend deep domain expertise with modern AI to deliver
-                    end-to-end solutions for incident management and operational
+                    end‑to‑end solutions for incident management and operational
                     intelligence.
                   </p>
                 </div>
@@ -176,9 +233,7 @@
                     <h5 class="mb-25">Incident Management Platform</h5>
                     <p>
                       Streamline and digitize incident reporting and tracking
-                      with web and mobile apps. Real-time visibility,
-                      categorization, escalation workflows, and complete audit
-                      trails.
+                      with web and mobile apps. Enable real‑time visibility into incidents, categorization by severity and impact, escalation workflows, and closure tracking with complete audit trails.
                     </p>
                   </div>
                 </div>
@@ -189,11 +244,9 @@
                     <i class="lni lni-layers"></i>
                   </div>
                   <div class="content">
-                    <h5 class="mb-25">AI-Augmented Resolution</h5>
+                    <h5 class="mb-25">AI‑Augmented Resolution Engine</h5>
                     <p>
-                      Domain-specific LLM and AI models recommend resolutions,
-                      classify incidents, route to right teams, and generate
-                      summaries for faster decisions.
+                      Use domain‑specific LLM and AI models to recommend likely resolutions, classify incidents into predefined categories, route them to the right teams, and generate concise summaries for faster decision‑making.
                     </p>
                   </div>
                 </div>
@@ -206,9 +259,7 @@
                   <div class="content">
                     <h5 class="mb-25">Analytics & Dashboards</h5>
                     <p>
-                      Interactive dashboards and reports for data-driven
-                      insights. Monitor trends, response KPIs, and operational
-                      performance for continuous improvement.
+                      Provide data‑driven insights through interactive dashboards and reports. Monitor incident trends, response KPIs, and operational performance to support continuous improvement and strategic planning.
                     </p>
                   </div>
                 </div>
@@ -219,11 +270,22 @@
                     <i class="lni lni-cog"></i>
                   </div>
                   <div class="content">
-                    <h5 class="mb-25">Custom LLM Deployment</h5>
+                    <h5 class="mb-25">Custom LLM / AI Model Setup</h5>
                     <p>
-                      Train and fine-tune domain-specific AI models embedded
-                      into your systems. Ensure reliable production performance
-                      and compliant deployment.
+                      Identify business objectives, gather and model relevant domain data, train and fine‑tune LLM/AI models, and embed them into your incident management or operational systems. Ensure reliable performance in production and responsible, compliant AI deployment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="single-feature wow fadeInUp" data-wow-delay="1s">
+                  <div class="icon">
+                    <i class="lni lni-network"></i>
+                  </div>
+                  <div class="content">
+                    <h5 class="mb-25">Multi‑Agent AI Coordination</h5>
+                    <p>
+                      <strong>A coordinated team of AI agents that take turns to complete complex workflows, can pause/resume safely, and records every decision in a tamper‑proof on‑chain (on blockchain) audit trail (works with GPT, Claude, and others).</strong>
                     </p>
                   </div>
                 </div>
@@ -232,7 +294,11 @@
           </div>
         </div>
         <div class="feature-img wow fadeInLeft" data-wow-delay=".2s">
-          <img src="assets/img/feature/feature-2-1.svg" alt="" />
+          <img
+            src="assets/img/feature/featureOrange.png"
+            alt="AI Feature Illustration"
+            style="width: 500px; height: 500px; max-width: 100%; height: auto"
+          />
         </div>
       </div>
     </section>
@@ -250,19 +316,21 @@
             <div class="about-content-wrapper">
               <div class="section-title mb-40">
                 <h3 class="mb-25 wow fadeInUp" data-wow-delay=".2s">
-                  About Aptmize
+                  About Us
                 </h3>
                 <p class="wow fadeInUp" data-wow-delay=".4s">
-                  We are an AI-focused consulting and technology solutions
-                  company committed to adding value for infrastructure and
-                  operations enterprises. Powered by our unique, patent-filed
-                  Enterprise Knowledge Graphs and Semantic Intelligence
-                  technology.
+                  We are an AI‑focused consulting and technology solutions company committed to adding value for infrastructure and operations enterprises. Our mission is to turn complex data and processes into intelligent ecosystems that improve efficiency, reliability, and real‑time decision‑making.
+                </p>
+                <p class="wow fadeInUp" data-wow-delay=".5s">
+                  Powered by our unique, patent‑filed Enterprise Knowledge Graphs and Semantic Intelligence technology, we deliver intelligent automation, real‑time insights, explainable anomaly analysis, and human‑understandable reasoning—bridging the gap between AI intelligence and human intuition.
+                </p>
+                <p class="wow fadeInUp" data-wow-delay=".6s">
+                  <strong>Optionally, our solutions can be backed by blockchain infrastructure that stores critical operational data, AI decisions, and audit trails permanently and immutably thus ensuring transparency, accountability, and regulatory compliance.</strong>
                 </p>
               </div>
               <div
                 class="counter-up-wrapper mb-40 wow fadeInUp"
-                data-wow-delay=".6s"
+                data-wow-delay=".7s"
               >
                 <div class="single-counter">
                   <h4 class="countup" id="secondo2" cup-end="50" cup-append="+">
@@ -280,7 +348,7 @@
               <a
                 href="#experience"
                 class="button button-lg radius-3 wow fadeInUp page-scroll"
-                data-wow-delay=".7s"
+                data-wow-delay=".8s"
                 >Our Experience</a
               >
             </div>
@@ -300,8 +368,7 @@
               </h3>
               <p class="wow fadeInUp" data-wow-delay=".4s">
                 Our core team brings decades of experience delivering
-                large-scale, high-availability systems and AI solutions for
-                major enterprises.
+                large‑scale, high‑availability systems and AI solutions <strong>and Blockchain infrastructure</strong>.
               </p>
             </div>
           </div>
@@ -316,8 +383,7 @@
               <div class="content">
                 <h5 class="mb-25">Major Telecom IVR Systems</h5>
                 <p>
-                  Delivered large-scale IVR systems for major telecom operators
-                  across India.
+                  Delivered one of India's largest IVR systems with 2×24×32 (1536) lines using E1/CCS/R2MFC signalling for major telecom operators.
                 </p>
               </div>
             </div>
@@ -330,8 +396,7 @@
               <div class="content">
                 <h5 class="mb-25">Billing Mediation Platform</h5>
                 <p>
-                  Processing over 1 billion records per day across switches like
-                  Alcatel E10B, OCB, Siemens EWSD, and Fujitsu FETEX.
+                  Built billing mediation platforms processing over 1 billion records per day across switches like Alcatel E10B, OCB, Siemens EWSD, and Fujitsu FETEX.
                 </p>
               </div>
             </div>
@@ -344,8 +409,7 @@
               <div class="content">
                 <h5 class="mb-25">Keolis Ridership Prediction</h5>
                 <p>
-                  Successfully delivered AI project for Keolis group, adopted as
-                  major operations decision-support tool.
+                  Successfully delivered a Ridership Prediction project for the Keolis group, adopted as a major operations decision‑support tool.
                 </p>
               </div>
             </div>
@@ -358,8 +422,52 @@
               <div class="content">
                 <h5 class="mb-25">Current Projects</h5>
                 <p>
-                  Automation software for semiconductor manufacturing +
-                  LLM-based systems for education.
+                  Currently rolling out automation software for a semiconductor manufacturing plant and an LLM‑based question paper and test execution system for an education institution.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay="1s">
+              <div class="icon">
+                <i class="lni lni-link"></i>
+              </div>
+              <div class="content">
+                <h5 class="mb-25">SS7‑Based Systems & Image Processing</h5>
+                <p>
+                  Architected and rolled out SS7‑based lawful interception systems and advanced image processing solutions with sub‑pixel technology.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="lni lni-bulb"></i>
+              </div>
+              <div class="content">
+                <h5 class="mb-25">AI/LLM‑Based "Thinking Systems"</h5>
+                <p>
+                  Designed and implemented AI/LLM‑based "thinking systems" for complex enterprise use cases.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row mt-50">
+          <div class="col-12">
+            <div class="single-feature wow fadeInUp" data-wow-delay="1.4s" style="background: #f8f9fa; padding: 30px; border-radius: 15px;">
+              <div class="icon">
+                <i class="lni lni-shield"></i>
+              </div>
+              <div class="content">
+                <h5 class="mb-25">Blockchain & Decentralized Systems</h5>
+                <p>
+                  <strong>We have hands‑on experience in smart contract development and decentralized application architecture.</strong>
+                </p>
+                <p class="mt-3">
+                  <strong>We have already built AI‑Blockchain integrations enabling intelligent systems to interact with on‑chain data securely with encryption.</strong>
                 </p>
               </div>
             </div>
@@ -371,32 +479,150 @@
     <!-- ========================= contact section (no form) ========================= -->
     <section id="contact" class="contact-section contact-style-6">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="text-center">
-              <div class="section-title mb-60">
-                <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">
-                  Let's Transform Your Operations
-                </h3>
-                <p class="wow fadeInUp" data-wow-delay=".4s">
-                  Ready to streamline incident management and unlock AI-driven
-                  insights for your organization? Get in touch today.
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="contact-form-wrapper">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <!-- REQUIRED: Your Web3Forms Access Key -->
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="b1638040-c697-4b5e-b007-b437e2acd5d5"
+                />
+
+                <div class="row">
+                  <!-- First Name -->
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <label for="firstName"
+                        >First Name <span style="color: #ff6b35">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="firstName"
+                        name="firstName"
+                        class="form-input"
+                        placeholder="John"
+                        required
+                      />
+                      <i class="lni lni-user"></i>
+                    </div>
+                  </div>
+
+                  <!-- Last Name -->
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <label for="lastName"
+                        >Last Name <span style="color: #ff6b35">*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="lastName"
+                        name="lastName"
+                        class="form-input"
+                        placeholder="Doe"
+                        required
+                      />
+                      <i class="lni lni-users"></i>
+                    </div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <label for="email"
+                        >Email <span style="color: #ff6b35">*</span></label
+                      >
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        class="form-input"
+                        placeholder="yourmail@company.com"
+                        required
+                      />
+                      <i class="lni lni-envelope"></i>
+                    </div>
+                  </div>
+
+                  <!-- Phone -->
+                  <div class="col-md-6">
+                    <div class="single-input">
+                      <label for="phone"
+                        >Phone <span style="color: #ff6b35">*</span></label
+                      >
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        class="form-input"
+                        placeholder="+91-XXXXXXXXXX"
+                        required
+                      />
+                      <i class="lni lni-phone"></i>
+                    </div>
+                  </div>
+
+                  <!-- Message -->
+                  <div class="col-md-12">
+                    <div class="single-input">
+                      <label for="message"
+                        >Message <span style="color: #ff6b35">*</span></label
+                      >
+                      <textarea
+                        name="message"
+                        id="message"
+                        class="form-input"
+                        placeholder="Tell us about your AI automation needs..."
+                        rows="6"
+                        required
+                      ></textarea>
+                      <i class="lni lni-comments-alt"></i>
+                    </div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-md-12">
+                    <div class="form-button">
+                      <button type="submit" class="button radius-10">
+                        Get Free AI Assessment
+                        <i class="lni lni-telegram-original"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <!-- Success/Error Messages -->
+              <div
+                id="form-message"
+                style="margin-top: 20px; display: none"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 order-first order-lg-last">
+            <div class="left-wrapper">
+              <div class="section-title mb-40">
+                <h3 class="mb-15">Let's Transform Your Operations</h3>
+                <p>
+                  Ready to streamline incident management and unlock AI‑driven insights, <strong>and ensure permanent, auditable records</strong> for your organization?
                 </p>
               </div>
               <div class="row">
-                <div class="col-lg-4 mb-4">
-                  <div class="single-item wow fadeInUp" data-wow-delay=".2s">
+                <div class="col-lg-12">
+                  <div class="single-item">
                     <div class="icon">
                       <i class="lni lni-envelope"></i>
                     </div>
                     <div class="text">
                       <h6>Email</h6>
-                      <p>info@aptmize.com</p>
+                      <p>we'lladdlater@aptmize.com</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                  <div class="single-item wow fadeInUp" data-wow-delay=".4s">
+                <div class="col-lg-12">
+                  <div class="single-item">
                     <div class="icon">
                       <i class="lni lni-phone"></i>
                     </div>
@@ -406,8 +632,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 mb-4">
-                  <div class="single-item wow fadeInUp" data-wow-delay=".6s">
+                <div class="col-lg-12">
+                  <div class="single-item">
                     <div class="icon">
                       <i class="lni lni-map-marker"></i>
                     </div>
@@ -417,14 +643,6 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="buttons mt-50">
-                <a
-                  href="mailto:info@aptmize.com"
-                  class="button button-lg radius-10 wow fadeInUp"
-                  data-wow-delay=".7s"
-                  >Get Free AI Assessment</a
-                >
               </div>
             </div>
           </div>
@@ -449,9 +667,7 @@
                   </a>
                 </div>
                 <p class="desc">
-                  AI-powered consulting delivering intelligent automation and
-                  real-time insights for infrastructure and operations
-                  enterprises.
+                  AI‑powered consulting and technology solutions <strong>with blockchain backed for mission‑critical operations</strong>.
                 </p>
                 <ul class="socials">
                   <li>
@@ -498,6 +714,9 @@
                   <li>
                     <a href="#solutions" class="page-scroll">LLM Deployment</a>
                   </li>
+                  <li>
+                    <a href="#solutions" class="page-scroll">Multi‑Agent AI</a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -529,6 +748,45 @@
     <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
 
     <!-- ========================= JS here ========================= -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector(
+          'form[action="https://api.web3forms.com/submit"]'
+        );
+        const messageDiv = document.getElementById("form-message");
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener("submit", function (e) {
+          // Show loading state
+          const originalText = submitBtn.innerHTML;
+          submitBtn.innerHTML = '<i class="lni lni-spinner"></i> Sending...';
+          submitBtn.disabled = true;
+
+          // Reset message
+          messageDiv.style.display = "none";
+        });
+
+        // Listen for Web3Forms response
+        window.addEventListener("message", function (event) {
+          if (event.data.type === "web3forms") {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+
+            if (event.data.success) {
+              messageDiv.innerHTML =
+                '<div style="color: #10B981; padding: 15px; background: #ecfdf5; border-radius: 10px; border-left: 4px solid #10B981;">✅ Thank you! Your message has been sent. We\'ll respond within 24 hours.</div>';
+              messageDiv.style.display = "block";
+              form.reset();
+            } else {
+              messageDiv.innerHTML =
+                '<div style="color: #FF6B35; padding: 15px; background: #fef2f2; border-radius: 10px; border-left: 4px solid #FF6B35;">❌ Something went wrong. Please try again.</div>';
+              messageDiv.style.display = "block";
+            }
+          }
+        });
+      });
+    </script>
     <script src="assets/js/bootstrap.5.0.0.alpha-2-min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
