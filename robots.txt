@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bhargav00007.github.io/aptimize-dev/sitemap.xml
